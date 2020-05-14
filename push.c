@@ -152,9 +152,8 @@ void (*get_fn(char *token))(stack_t **, unsigned int)
 {
 	int i = 0;
 
-	if (token[0] == '#')
-		return (_nop);
-	instruction_t operation[] = {
+	instruction_t operation[] =
+	{
 		{"pall", _pall},
 		{"pop", _pop},
 		{"swap", _swap},
@@ -162,6 +161,8 @@ void (*get_fn(char *token))(stack_t **, unsigned int)
 		{"nop", _nop},
 		{NULL, NULL}
 	};
+	if (token[0] == '#')
+		return (_nop);
 	while (operation[i].opcode)
 	{
 		if (
