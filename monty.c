@@ -2,9 +2,9 @@
 int error = 0;
 /**
  * exitf - the main function.
- * @head: int
- * @file: int
- * @buff: int
+ * @head: head of the list
+ * @file: the file to treat
+ * @buff: the buffer
  * Return: 0.
  */
 void exitf(stack_t **head, char *buff, FILE *file)
