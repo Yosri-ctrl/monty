@@ -1,7 +1,5 @@
 #include "monty.h"
-
 int error = 0;
-
 /**
  * exitf - the main function.
  * @head: int
@@ -14,6 +12,7 @@ void exitf(stack_t **head, char *buff, FILE *file)
 	freeList(head, buff, file);
 	exit(EXIT_FAILURE);
 }
+
 /**
  * freeList - the main function.
  * @head: int
@@ -53,6 +52,7 @@ char *tokenizer(char *buff)
 		return (NULL);
 	return (token);
 }
+
 /**
  * split - the main function.
  * @head: int
@@ -106,9 +106,9 @@ void split(stack_t **head, FILE *file, char *buff, unsigned int ln)
 
 /**
  * main - the main function.
- * @argc: int
- * @argv: int
- * Return: 0.
+ * @argc: len of argv
+ * @argv: array containing the arguments
+ * Return: Always 0
  */
 int main(int argc, char **argv)
 {
