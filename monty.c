@@ -127,7 +127,7 @@ int main(int argc, char **argv)
 	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file\n");
+		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
 	for (; (getline(&buff, &size, file)) != -1; ln++)
