@@ -1,13 +1,10 @@
 #include "monty.h"
-
-
-
 /**
  * _push - the main function.
- * @head: int.
- * @ln: int.
- * @arg: int.
- * Return: 0.
+ * @head: the head of the list
+ * @ln: the length
+ * @arg: the argument
+ * Return: Always 0
  */
 void _push(stack_t **head, unsigned int ln, char *arg)
 {
