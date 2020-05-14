@@ -22,6 +22,7 @@ void _add(stack_t **head, unsigned int ln)
 {
 	int x = 0;
 
+	ln++;
 	if (!(*head)->next || !*head)
 	{
 		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n", ln);
