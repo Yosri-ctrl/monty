@@ -92,6 +92,7 @@ int is_digit(char *arg, unsigned int ln)
 {
 	int i = 0;
 
+	ln++;
 	if (arg[i] != '-' && !(arg[i] <= 57 && arg[i] >= 48))
 	{
 		dprintf(STDERR_FILENO, "L%d: usage: push integer\n", ln);
