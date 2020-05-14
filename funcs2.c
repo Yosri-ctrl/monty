@@ -39,3 +39,25 @@ void _sub(stack_t **head, unsigned int ln)
 	_pop(head, ln);
 	(*head)->n = x;
 }
+/**
+ * _mul - the main function.
+ * @head: int
+ * @ln: int
+ * Return: 0.
+ */
+
+void _mul(stack_t **head, unsigned int ln)
+{
+	int x = 0;
+
+	if (*head == NULL || (*head)->next == NULL)
+	{
+		dprintf(STDERR_FILENO, "L%d: can't mul, stack too short\n", ln);
+		error = 1;
+		return;
+	}
+
+	x = (((*head)->next)->n) * ((*head)->n);
+	_pop(head, ln);
+	(*head)->n = x;
+}
