@@ -84,7 +84,7 @@ char *chArg(unsigned int ln)
 
 /**
  * is_digit - the main function.
- * @str: int
+ * @arg: int
  * @ln: int
  * Return: 0.
  */
@@ -159,6 +159,7 @@ void (*get_fn(char *token))(stack_t **, unsigned int)
 		{"swap", _swap},
 		{"add", _add},
 		{"nop", _nop},
+		{"pint", _pint},
 		{NULL, NULL}
 	};
 	if (token[0] == '#')

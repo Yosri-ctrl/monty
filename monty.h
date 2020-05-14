@@ -51,11 +51,13 @@ void invalid(char *token, unsigned int ln);
 
 int is_digit(char *arg, unsigned int ln);
 
+
 void _pall(stack_t **head, unsigned int ln);
 void _pop(stack_t **head, unsigned int ln);
 void _swap(stack_t **head, unsigned int ln);
 void _add(stack_t **head, unsigned int ln);
 void _nop(stack_t **head, unsigned int ln);
+void _pint(stack_t **head, unsigned int ln);
 
 void freeList(stack_t **head, char *buff, FILE *file);
 
