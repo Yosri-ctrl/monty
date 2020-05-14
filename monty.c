@@ -37,8 +37,8 @@ void freeList(stack_t **head, char *buff, FILE *file)
 
 /**
  * tokenizer - the main function.
- * @buff: int
- * Return: 0.
+ * @buff: the buffer to treat
+ * Return: Always 0
  */
 
 char *tokenizer(char *buff)
@@ -55,11 +55,11 @@ char *tokenizer(char *buff)
 
 /**
  * split - the main function.
- * @head: int
- * @file: int
- * @buff: int
- * @ln: int
- * Return: 0.
+ * @head: the head of the file
+ * @file: the file to treat
+ * @buff: the buffer
+ * @ln: the length of the buffer
+ * Return: Always 0
  */
 void split(stack_t **head, FILE *file, char *buff, unsigned int ln)
 {
