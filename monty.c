@@ -116,7 +116,7 @@ int main(int argc, char **argv)
 	stack_t *head = NULL;
 	FILE *file;
 	char *buff = NULL;
-	int ln = 0;
+	int ln = 1;
 
 
 	if (argc != 2)
