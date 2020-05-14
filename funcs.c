@@ -21,14 +21,13 @@ void _nop(stack_t **head, unsigned int ln)
 void _add(stack_t **head, unsigned int ln)
 {
 	int x = 0;
-	
+
 	if (!(*head)->next || !*head)
 	{
 		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n", ln);
 		error = 1;
 		return;
 	}
-
 	x = ((*head)->n) + (((*head)->next)->n);
 	_pop(head, ln);
 	(*head)->n = x;
