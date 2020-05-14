@@ -15,10 +15,10 @@ void exitf(stack_t **head, char *buff, FILE *file)
 
 /**
  * freeList - the main function.
- * @head: int
- * @file: int
- * @buff: int
- * Return: 0.
+ * @head: the head of the list
+ * @file: the file to treat
+ * @buff: the buffer
+ * Return: Always 0
  */
 void freeList(stack_t **head, char *buff, FILE *file)
 {
