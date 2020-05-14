@@ -8,6 +8,7 @@
 
 extern int error;
 
+/*Structs*/
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -38,6 +39,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int ln);
 } instruction_t;
 
+/*Prototypes*/
 void _push(stack_t **stack, unsigned int ln, char *str);
 char *chArg(unsigned int line_number);
 void split(stack_t **head, FILE *fp, char *line, unsigned int ln);
@@ -54,7 +56,6 @@ void _nop(stack_t **head, unsigned int ln);
 void _pint(stack_t **head, unsigned int ln);
 void _sub(stack_t **head, unsigned int ln);
 void _mul(stack_t **head, unsigned int ln);
-
 void freeList(stack_t **head, char *buff, FILE *file);
 
 #endif
