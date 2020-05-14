@@ -106,7 +106,7 @@ void split(stack_t **head, FILE *file, char *buff, unsigned int ln)
 
 /**
  * main - the main function.
- * @argc: len of argv
+ * @argc: len of arguments
  * @argv: array containing the arguments
  * Return: Always 0
  */
