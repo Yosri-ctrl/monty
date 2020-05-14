@@ -152,8 +152,7 @@ void (*get_fn(char *token))(stack_t **, unsigned int)
 {
 	int i = 0;
 
-	instruction_t operation[] =
-	{
+	instruction_t operation[] = {
 		{"pall", _pall},
 		{"pop", _pop},
 		{"swap", _swap},

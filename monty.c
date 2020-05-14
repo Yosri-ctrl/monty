@@ -26,7 +26,7 @@ void freeList(stack_t **head, char *buff, FILE *file)
 	if (*head)
 	{
 		while ((*head)->next)
-		{	
+		{
 			(*head) = (*head)->next;
 			free((*head)->prev);
 		}
