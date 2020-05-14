@@ -113,9 +113,9 @@ int is_digit(char *arg, unsigned int ln)
 
 /**
  * invalid - the main function.
- * @token: int
- * @ln: int
- * Return: 0.
+ * @token: the line
+ * @ln: the line
+ * Return: Always 0
  */
 void invalid(char *token, unsigned int ln)
 {
