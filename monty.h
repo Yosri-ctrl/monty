@@ -49,7 +49,7 @@ void (*get_fn(char *token))(stack_t **, unsigned int);
 
 void invalid(char *token, unsigned int ln);
 
-int is_digit(char *str, unsigned int ln);
+int is_digit(char *arg, unsigned int ln);
 
 void _pall(stack_t **head, unsigned int ln);
 void _pop(stack_t **head, unsigned int ln);

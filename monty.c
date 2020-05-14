@@ -118,6 +118,7 @@ int main(int argc, char **argv)
 	char *buff = NULL;
 	int ln = 0;
 
+
 	if (argc != 2)
 	{
 		dprintf(STDERR_FILENO, "USAGE: monty file\n");

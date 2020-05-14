@@ -12,6 +12,7 @@
 void _push(stack_t **head, unsigned int ln, char *arg)
 {
 	stack_t *nStack = NULL;
+
 	int x = atoi(arg);
 
 	(void)ln;
@@ -87,11 +88,11 @@ char *chArg(unsigned int ln)
  * @ln: int
  * Return: 0.
  */
-int is_digit(char *str, unsigned int ln)
+int is_digit(char *arg, unsigned int ln)
 {
 	int i = 0;
 
-	if (str[i] != '-' && !(isdigit(str[i])))
+	if (arg[i] != '-' && !(arg[i] <= 57 && arg[i] >= 48))
 	{
 		dprintf(STDERR_FILENO, "L%d: usage: push integer\n", ln);
 		error = 1;
@@ -99,9 +100,9 @@ int is_digit(char *str, unsigned int ln)
 	}
 	else
 		i++;
-	while (str[i] != '\0')
+	while (arg[i] != '\0')
 	{
-		if (!(isdigit(str[i])))
+		if (arg[i] <= 57 && arg[i] >= 48)
 			i++;
 		else
 		{
