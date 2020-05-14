@@ -39,8 +39,8 @@ void _push(stack_t **head, unsigned int ln, char *arg)
 
 /**
  * chArg - the main function.
- * @ln: int
- * Return: 0.
+ * @ln: th length
+ * Return: Always 0
  */
 char *chArg(unsigned int ln)
 {
@@ -81,9 +81,9 @@ char *chArg(unsigned int ln)
 
 /**
  * is_digit - the main function.
- * @arg: int
- * @ln: int
- * Return: 0.
+ * @arg: the arguments
+ * @ln: the length
+ * Return: Always 0
  */
 int is_digit(char *arg, unsigned int ln)
 {
