@@ -160,7 +160,7 @@ void (*get_fn(char *token))(stack_t **, unsigned int)
 		{"add", _add},
 		{"nop", _nop},
 		{"pint", _pint},
-		{"div", _div},
+		{"sub", _sub},
 		{NULL, NULL}
 	};
 	if (token[0] == '#')
